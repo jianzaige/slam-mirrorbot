@@ -1,0 +1,45 @@
+{
+  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/lib/pg.jar",
+  "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
+  "sites": [
+    {
+      "key": "dytt_zyw",
+      "name": "🎬电影天堂资源网",
+      "type": 1,
+      "api": "http://dyttzyw.tv/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "动作片", "喜剧片", "爱情片", "科幻片", "恐怖片", 
+        "剧情片", "战争片", "国产剧", "欧美剧", "香港剧", 
+        "韩国剧", "日本剧", "台湾剧", "海外剧", "纪录片", 
+        "动漫", "综艺"
+      ]
+    },
+    {
+      "key": "csp_Douban",
+      "name": "🌟豆瓣热播",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1
+    }
+  ],
+  "lives": [
+    {
+      "name": "IPV6直播",
+      "type": 0,
+      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "playerType": 1
+    }
+  ],
+  "rules": [
+    {
+      "name": "广告过滤",
+      "hosts": ["vip.ad-filter.com", "ads.com"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666,[\\s\\S]*?#EXT-X-DISCONTINUITY"]
+    }
+  ]
+}
