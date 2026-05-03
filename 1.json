@@ -1,27 +1,39 @@
-
 {
-  "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
-  "homepage": "on",
-  "sites": [
-    {
-      "key": "dyttzy",
-      "name": "电影天堂",
-      "type": 1,
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
+  "key": "dyttzyw_xpath",
+  "name": "🎬 电影天堂资源",
+  "type": 3,
+  "api": "csp_XPath",
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "ext": {
+    "首页": "http://dyttzyw.tv",
+    "分类": "电影$1#电视剧$2#综艺$3#动漫$4#4K电影$5",
+    "分类URL": "http://dyttzyw.tv/index.php/vod/type/id/{cateId}/page/{catePage}.html",
+    "限制": 20,
+    "列表": "body && .stui-vodlist__item",
+    "图片": ".lazyload && data-original",
+    "标题": "h4 && a && text",
+    "副标题": ".pic-text && text",
+    "链接": "h4 && a && href",
+    "搜索模式": "1",
+    "搜索url": "http://dyttzyw.tv/index.php/vod/search/page/{pg}/wd/{wd}.html",
+    "搜索列表": "body && .stui-vodlist__item",
+    "搜索图片": ".lazyload && data-original",
+    "搜索标题": "h4 && a && text",
+    "搜索链接": "h4 && a && href",
+    "详情标题": "h3 && text",
+    "详情正文": ".detail-content && text",
+    "播放列表": ".stui-content__playlist",
+    "播放标题": "a && text",
+    "播放链接": "a && href",
+    "免嗅": "0",
+    "分类": {
+        "电影": "1",
+        "电视剧": "2",
+        "综艺": "3",
+        "动漫": "4",
+        "4K电影": "5"
     }
-  ],
-  "parses": [
-    {
-      "name": "官方解析",
-      "type": 1,
-      "url": "https://vip.dyttzyplay.com/?url="
-    }
-  ],
-  "flags": [
-    "dytt",
-    "dyttm3u8"
-  ]
+  }
 }
