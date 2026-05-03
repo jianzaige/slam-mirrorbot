@@ -1,1 +1,27 @@
 
+{
+  "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
+  "homepage": "on",
+  "sites": [
+    {
+      "key": "dyttzy",
+      "name": "电影天堂",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ],
+  "parses": [
+    {
+      "name": "官方解析",
+      "type": 1,
+      "url": "https://vip.dyttzyplay.com/?url="
+    }
+  ],
+  "flags": [
+    "dytt",
+    "dyttm3u8"
+  ]
+}
