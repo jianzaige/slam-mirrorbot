@@ -1,1 +1,47 @@
-
+{
+  "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
+  "homepage": "on",
+  "homeLogo": "",
+  "spider": "./jar/custom_spider.jar",
+  "sites": [
+    {
+      "key": "dyttzy",
+      "name": "电影天堂",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ],
+  "parses": [
+    {
+      "name": "官方解析",
+      "type": 1,
+      "url": "https://vip.dyttzyplay.com/?url="
+    },
+    {
+      "name": "线路1",
+      "type": 1,
+      "url": "https://jx.jsonplayer.com/player/?url="
+    },
+    {
+      "name": "线路2",
+      "type": 1,
+      "url": "https://jx.playerjy.com/?url="
+    }
+  ],
+  "flags": [
+    "qq",
+    "qiyi",
+    "iqiyi",
+    "youku",
+    "mgtv",
+    "bilibili",
+    "dytt",
+    "dyttm3u8"
+  ],
+  "lives": [],
+  "drives": []
+}
